@@ -30,3 +30,6 @@ jobs:
           python-version: 3.8 # optional, default is 3.x
           # The target architecture (x86, x64) of the Python interpreter.
           architecture: x64
+
+      - name: Pytest
+        run: python -m pip install pytest ; pytest --doctest-modules
