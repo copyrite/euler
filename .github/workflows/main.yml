@@ -34,7 +34,7 @@ jobs:
       - name: Pytest
         env:
           EULER1: ${{ secrets.EULER1 }}
-          EULER2: ${{ secrets.EULER1 }}
-          EULER3: ${{ secrets.EULER1 }}
-          EULER4: ${{ secrets.EULER1 }}
+          EULER2: ${{ secrets.EULER2 }}
+          EULER3: ${{ secrets.EULER3 }}
+          EULER4: ${{ secrets.EULER4 }}
         run: python -m pip install pytest ; pytest --doctest-modules
